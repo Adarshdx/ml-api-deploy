@@ -1,0 +1,77 @@
+### Health Check
+GET http://localhost:8000/health
+Accept: application/json
+
+### Root endpoint
+GET http://localhost:8000/
+Accept: application/json
+
+### Single Prediction - Setosa
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+    "features": {
+        "sepal_length": 5.1,
+        "sepal_width": 3.5,
+        "petal_length": 1.4,
+        "petal_width": 0.2
+    }
+}
+
+### Single Prediction - Versicolor
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+    "features": {
+        "sepal_length": 6.5,
+        "sepal_width": 2.8,
+        "petal_length": 4.6,
+        "petal_width": 1.5
+    }
+}
+
+### Single Prediction - Virginica
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+    "features": {
+        "sepal_length": 6.3,
+        "sepal_width": 3.3,
+        "petal_length": 6.0,
+        "petal_width": 2.5
+    }
+}
+
+### Batch Prediction
+POST http://localhost:8000/predict_batch
+Content-Type: application/json
+
+[
+    {
+        "features": {
+            "sepal_length": 5.1,
+            "sepal_width": 3.5,
+            "petal_length": 1.4,
+            "petal_width": 0.2
+        }
+    },
+    {
+        "features": {
+            "sepal_length": 6.5,
+            "sepal_width": 2.8,
+            "petal_length": 4.6,
+            "petal_width": 1.5
+        }
+    },
+    {
+        "features": {
+            "sepal_length": 6.3,
+            "sepal_width": 3.3,
+            "petal_length": 6.0,
+            "petal_width": 2.5
+        }
+    }
+]
