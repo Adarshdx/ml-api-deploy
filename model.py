@@ -52,4 +52,3 @@ classifier = IrisClassifier()
 .
 .
 .
-.
