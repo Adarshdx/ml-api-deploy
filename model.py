@@ -44,10 +44,3 @@ class IrisClassifier:
 
 # Singleton instance
 classifier = IrisClassifier()
-.
-.
-.
-.
-.
-.
-.
