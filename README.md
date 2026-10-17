@@ -1,5 +1,4 @@
-.
-.# ML Model Deployment API with FastAPI & Docker
+# ML Model Deployment API with FastAPI & Docker
 
 A production-ready machine learning model serving API built using **FastAPI** and containerized with **Docker**. This project demonstrates how to deploy a trained machine learning model behind a REST API, enabling easy integration with web applications, mobile apps, and other services.
 
